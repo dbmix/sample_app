@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass'
+  # , '2.3.2.0'
 
 gem 'execjs'
 # gem 'therubyracer'
@@ -22,10 +24,11 @@ group :test do
   gem 'capybara', '2.1.0'
 
   # Uncomment this line on OS X.
-  # gem 'growl', '1.0.3'
+    gem 'growl' if /darwin/ =~ RUBY_PLATFORM
+  #, '1.0.3'
 
   # Uncomment these lines on Linux.
-   gem 'libnotify'
+   gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
        #, '0.8.0'
 
   # Uncomment these lines on Windows.
