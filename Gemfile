@@ -28,7 +28,7 @@ group :test do
   #, '1.0.3'
 
   # Uncomment these lines on Linux.
-  # gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
+    gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
        #, '0.8.0'
 
   # Uncomment these lines on Windows.
