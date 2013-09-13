@@ -24,11 +24,11 @@ group :test do
   gem 'capybara', '2.1.0'
 
   # Uncomment this line on OS X.
-  #  gem 'growl' if /darwin/ =~ RUBY_PLATFORM
+    gem 'growl' if /darwin/ =~ RUBY_PLATFORM
   #, '1.0.3'
 
   # Uncomment these lines on Linux.
-    gem 'libnotify' #if /linux/ =~ RUBY_PLATFORM
+    gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
        #, '0.8.0'
 
   # Uncomment these lines on Windows.
